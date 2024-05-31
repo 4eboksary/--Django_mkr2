@@ -1,4 +1,4 @@
-name: DjangoCICD
+name: --Django_mkr2
 
 on:
   push:
@@ -27,7 +27,7 @@ jobs:
     - name: Run Django tests
       env:
         SECRET_KEY: ${{secrets.SECRET_KEY}}
-        DJANGO_SETTINGS_MODULE: djangoCICD.settings
+        DJANGO_SETTINGS_MODULE: --Django_mkr2.settings
       run: python manage.py test
 
   deploy:

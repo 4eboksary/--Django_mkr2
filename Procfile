@@ -1,0 +1,1 @@
+web: gunicorn --Django_mkr2.wsgi --log-file - --log-level debug
